@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 const search = require('./routes/search');
 
 const app = express();
-const DEV_MODE = true;
+const AWS_EC2 = true;
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('host', DEV_MODE ? 'localhost' : '0.0.0.0');
+app.set('host', AWS_EC2 ? '0.0.0.0' : 'localhost');
 app.use(express.static(path.join(__dirname, 'assets')));
 
 // to support JSON-encoded bodies
