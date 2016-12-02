@@ -1,0 +1,36 @@
+{
+  "name": "nsb_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinchen330/NSB-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinchen330/NSB-server/issues"
+  },
+  "homepage": "https://github.com/kevinchen330/NSB-server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "json": "^9.0.4",
+    "promise": "^7.1.1",
+    "yelp": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "prettyjson": "^1.2.1"
+  }
+}
