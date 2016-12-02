@@ -17,7 +17,7 @@ exports.getSearch = (req, res) => {
   })
   .then((data) => {
     console.log(JSON.stringify(data, null, 2));
-    res.send(data);
+    res.render('phoRestaurant', { 'data' : data.businesses });
   })
   .catch((err) => {
     console.error(err);

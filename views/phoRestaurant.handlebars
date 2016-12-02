@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <script src="js/code.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+  {{> navigation}}
+  <br>
+  <div class="row small-up-1 medium-up-2 large-up-3">
+    {{#each data}}
+    <div class="column">
+      <div class="callout">
+        <p>{{name}}</p>
+        <p><img src="{{image_url}}" style="width:250px;height:250px;"></p>
+        <p class="lead">Rating: <img src="{{rating_img_url_large}}"></p>
+        <p class="subheader">{{snippet_text}}</p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+
+
+
+    <!-- <div class="large-12 columns">
+        <div class="row">
+            {{#each data}}
+            <div class="large-4 small-6 columns">
+                <img src="{{image_url}}" style="width:250px;height:250px;">
+                <div class="panel">
+                    <h5>{{name}}</h5>
+                    <h6 class="subheader">{{rating}}</h6>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div> -->
+</body>
+
+</html>
